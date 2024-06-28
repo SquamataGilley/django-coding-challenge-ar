@@ -8,7 +8,7 @@ class MovieListView(generics.ListCreateAPIView):
 
     def get_queryset(self):
         queryset = Movie.objects.all()
-
+            #
         runtime = self.request.query_params.get('runtime')
         choice = self.request.query_params.get('choice')
 
